@@ -1,0 +1,13 @@
+﻿@model ViewBagAndViewData.Models.Employee
+
+@{
+    ViewBag.Title = "Test";
+    var employee = ViewData["emp"] as ViewBagAndViewData.Models.Employee;
+}
+
+<h2>Name: @ViewData["name"]</h2>
+<p>@ViewData["message"]</p>
+
+<p>@employee.Id</p>
+<p>@employee.Name</p>
+<p>@employee.Salary</p>
